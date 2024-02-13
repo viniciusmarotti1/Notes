@@ -3,21 +3,21 @@ import { FaXmark } from "react-icons/fa6";
 
 import { Container } from "./styles";
 
-export function NoteItem({ isNew, value, onClick, ...rest}){
-    return(
+export function NoteItem({ isNew = false, value, onClick, ...rest }) {
+    return (
         <Container isNew={isNew}>
-            <input 
-            type="text" 
-            value={value}
-            readOnly={!isNew} 
-            {...rest}
+            <input
+                type="text"
+                value={value}
+                readOnly={!isNew}
+                {...rest}
             />
-            <button 
-            type="button"
-            onClick={onClick}
-            className={isNew ? 'button-add' : 'button-delete'}
+            <button
+                type="button"
+                onClick={onClick}
+                className={isNew ? 'button-add' : 'button-delete'}
             >
-                {isNew ? <FaPlus/> : <FaXmark/>}
+                {isNew ? <FaPlus /> : <FaXmark />}
             </button>
         </Container>
     )

@@ -7,6 +7,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
 
     }
+
     body{
         background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
         color: ${({theme}) => theme.COLORS.WHITE};
@@ -15,7 +16,7 @@ export default createGlobalStyle`
     }
     body, input, button, textarea {
         font-family: 'Roboto Condensed', sans-serif;
-        font-size:  20px;
+        font-size: 16px;
         outline: none;
     }
     a{

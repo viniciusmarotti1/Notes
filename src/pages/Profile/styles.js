@@ -14,8 +14,14 @@ export const Container = styled.div`
     }
     svg{
         font-size: 28px;
-        color: ${({theme}) => theme.COLORS.ORANGE}
+        color: ${({theme}) => theme.COLORS.ORANGE};
+        background: none;
     }
+    button:first-child {
+       background: none;
+       border: none;
+    }
+
 `
 export const Form = styled.form`
     max-width: 350px;
